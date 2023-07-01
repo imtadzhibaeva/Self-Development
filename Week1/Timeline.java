@@ -1,7 +1,7 @@
 package Week1;
 
 public class Timeline {
-    
+
   public static void main(String[] args)  {
     System.out.println("Hello Java!") ;
 
@@ -13,7 +13,6 @@ public class Timeline {
 
     /* James Gosling is Canadian enginee who created Java while working at Sun Microsystems.
     His favorite number is the square root of 2!
-
      */
 
      System.out.println("You are a fun language!");
