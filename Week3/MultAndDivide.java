@@ -8,6 +8,6 @@ public class MultAndDivide {
         System.out.println(total);
 
         double perPerson = total / 4; 
-       //  System.ou
+        System.out.println(perPerson);
     }
 }
