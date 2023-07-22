@@ -12,7 +12,7 @@ public class Store2 {
     // advertise method
     public void advertise(){
         System.out.println("Come spend some money!");
-        System.out.println("Selling " + productType + " !");
+        System.out.println("Selling " + productType + "!");
     }
 
     // main method 
