@@ -21,6 +21,7 @@ price = initialPrice;
     public static void main(String[] args) {
         Store1 lemonadeStand = new Store1("Lemonade", 3.75);
         lemonadeStand.increasePrice(1.5);
+        System.out.println(lemonadeStand.price);
     }
     
 }
