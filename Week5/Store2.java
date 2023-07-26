@@ -19,6 +19,10 @@ public class Store2 {
     }
 
     // get pricewith tax method
+    public double getPriceWithTax(){
+        double totalPrice = price + price * 0.08;
+        return totalPrice;
+    }
   
     // main method
     public static void main(String[] args) {
