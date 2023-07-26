@@ -27,7 +27,7 @@ public class Store2 {
     // main method
     public static void main(String[] args) {
         Store2 lemonadeStand = new Store2("Lemonade", 3.75);
-        
+        double lemonadePrice = lemonadeStand.getPriceWithTax();
     }
     
 
