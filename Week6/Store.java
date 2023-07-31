@@ -27,6 +27,8 @@ public class Store {
     // main method
     public static void main(String[] args) {
         Store lemonadeStand = new Store("Lemonade", 3.75);
+        System.out.println(lemonadeStand);
         Store cookieShop = new Store("cookies", 5);
+        System.out.println(cookieShop);
     }
 }
