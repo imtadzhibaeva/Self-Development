@@ -3,25 +3,29 @@ package Week5;
 public class Store1 {
     // instance fields
     String productType;
-    double price;
+    // new instance fields
+    int inventoryCount;
+    double inventoryPrice;
+
 
     // constructor method
-    public Store1(String product, double initialPrice) {
-productType = product;
-price = initialPrice;
-    }
+    public Store1(String product, int count, double price) {
+        productType = product;
+        // new parameters
+        inventoryCount = count;
+        inventoryPrice = price;
 
-    // increase price method
-    public void increasePrice(double priceToAdd) {
-        double newPrice = price + priceToAdd;
-        price = newPrice;
     }
+// main method
+    public static void main(String[] args){
+// Store1 lemonadeStand = new Store1 ("lemonade");
+// System.out.println(lemonadeStand.productType);
 
-    // main method
-    public static void main(String[] args) {
-        Store1 lemonadeStand = new Store1("Lemonade", 3.75);
-        lemonadeStand.increasePrice(1.5);
-        System.out.println(lemonadeStand.price);
+Store1 cookieShop = new Store1 ("cookie", 12, 3.75);
+System.out.println(cookieShop.productType);
+System.out.println(cookieShop.inventoryCount);
+System.out.println(cookieShop.inventoryPrice);
     }
-    
+;
+
 }
