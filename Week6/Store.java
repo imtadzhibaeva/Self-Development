@@ -31,4 +31,7 @@ public class Store {
         Store cookieShop = new Store("cookies", 5);
         System.out.println(cookieShop);
     }
+     public String toString(){
+        return "This store sells " + productType + " at a price of " + price + ".";
+     }
 }
