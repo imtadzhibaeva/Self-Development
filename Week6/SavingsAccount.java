@@ -17,6 +17,6 @@ public class SavingsAccount {
     // Withdrawing:
      int afterWithdraw = savings.balance - 300;
     savings.balance = afterWithdraw;
-    System.out.println("You just withdrew " = 300);
+    System.out.println("You just withdrew " + 300);
     }
 }
