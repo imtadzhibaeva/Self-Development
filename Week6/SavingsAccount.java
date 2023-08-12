@@ -4,7 +4,7 @@ public class SavingsAccount {
     int balance;
 
     public SavingsAccount(int initialBalance){
-        
+
         balance = initialBalance;
     }
 
@@ -18,5 +18,9 @@ public class SavingsAccount {
   int afterWithdraw = savings.balance - 300;
     savings.balance = afterWithdraw;
     System.out.println("You just withdrew " + 300);
+
+    // check balance
+    System.out.println("Hello");
+    System.out.println("Your balance is " + savings.balance);
     }
 }
