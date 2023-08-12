@@ -28,6 +28,14 @@ public class SavingsAccount {
     savings.balance = afterDeposit;
     System.out.println("You just deposited " + 600);
 
+    // Check balance
+    System.out.println("Hello");
+    System.out.println("Your balance is " + savings.balance);
     
+    }
+
+    public void checkBalance() {
+        System.out.println("Hello");
+        System.out.println("Your balance is " + balance);
     }
 }
