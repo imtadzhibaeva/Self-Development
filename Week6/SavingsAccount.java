@@ -42,6 +42,7 @@ public class SavingsAccount {
     public void deposit(int amountToDeposit) {
         balance = amountToDeposit + balance;
         System.out.println("You just deposited " + amountToDeposit);
+        
     }
-    
+
 }
