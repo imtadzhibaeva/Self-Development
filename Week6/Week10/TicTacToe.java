@@ -77,4 +77,17 @@ public static void placePiece(char[][] gameBoard, int pos, String user) {
                   break;                                 
         }
 }
+public static String checkWinner() {
+
+List topRow = Array.asList(1, 2, 3);
+List midRow = Array.asList(4, 5, 6);
+List botRow = Array.asList(7, 8, 9);
+List leftCol = Array.asList(1, 4, 7);
+List midCol = Array.asList(2, 5, 8);
+List rightCol = Array.asList(3, 6, 9);
+List cross1 = Array.asList(1, 5, 9);
+List cross2 = Array.asList(7, 5, 3);
+
+    return "";
+}
 }
