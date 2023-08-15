@@ -22,18 +22,37 @@ while(true) {
          Scanner scan = new Scanner(System.in);
         System.out.println("Enter your placement (1-9):");
         int playerPos = scan.nextInt();
+while(playerPositions.contains(playerPos) || cpuPositions.contains(playerPositions)){
+System.out.println("position taken! Enter a correct Position");
+playerPos = scan.nextInt();
+}
 
-
-        placePiece(gameBoard, pos, "player");
+        placePiece(gameBoard, playerPos, "player");
+ String result = checkWinner();
+        if(result.length() > 0);
+        System.out.println(result);
+        break;
+}
         Random rand = new Random();
         int cpuPos = rand.nextInt(9) +1;
-        placePiece(gameBoard, pos, "cpu");
+
+while(playerPositions.contains(cpuPos) || cpuPositions.contains(cpuPos)){
+cpuPos = rand.nextInt(9) + 1;
+
+        placePiece(gameBoard, cpuPos, "cpu");
 
         printGameBoard(gameBoard);
+
+        result = checkWinner();
+        if(result.length() > 0);
+        System.out.println(result);
+        break;
 }
-    }
+}
+    
 public static void printGameBoard (char [][] gameBoard) {
     for(char[] row : gameBoard) {
+
         for (char c : row){
             System.out.println(c);
         }
@@ -47,8 +66,10 @@ public static void placePiece(char[][] gameBoard, int pos, String user) {
 
     if(user.equals("player")) {
         symbol = 'x';
+        playerPositions.add(pos);
     } else if(user.equals("cpu")){
         symbol = '0';
+        cpuPositions.add(pos);
     }
 
     switch(pos) {
@@ -104,6 +125,15 @@ winning.add(rightCol);
 winning.add(cross1);
 winning.add(cross2);
 
+for(List l : winning) {
+    if(playerPositions.containsAll(l)); {
+        return "Congratulations you won!";
+    } else if (cpuPositions.contains(l)) {
+        return "CPU wins! Sorry :(";
+    } else if (playerPositions.size() + cpuPositions.size() == 9){
+        return "CAT!";
+    }
+}
     return "";
 }
 }
