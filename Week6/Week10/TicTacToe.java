@@ -1,5 +1,6 @@
 package Week6.Week10;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class TicTacToe {
@@ -11,18 +12,20 @@ public class TicTacToe {
                             {'-', '+', '-', '+', '-'},
                             {' ', '|', ' ', '|', ' '}};
 
-
-        Scanner scan = new Scanner(System.in);
+while(true) {
+         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your placement (1-9):");
-        int pos = scan.nextInt();
+        int playerPos = scan.nextInt();
 
-        System.out.println(pos);
 
-        placePiece(gameBoard, pos "player");
-        placePiece(gameBoard, pos "cpu");
+        placePiece(gameBoard, pos, "player");
+        Random rand = new Random();
+        int cpuPos = rand.nextInt(9) +1;
+        placePiece(gameBoard, pos, "cpu");
 
         printGameBoard(gameBoard);
 }
+    }
 public static void printGameBoard (char [][] gameBoard) {
     for(char[] row : gameBoard) {
         for (char c : row){
