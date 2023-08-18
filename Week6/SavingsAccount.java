@@ -31,6 +31,10 @@ public class SavingsAccount {
     // Check balance
     System.out.println("Hello");
     System.out.println("Your balance is " + savings.balance);
+
+    // withdraw
+    int amountToWithdraw = balance - amountToWithdraw;
+    
     
     }
 
