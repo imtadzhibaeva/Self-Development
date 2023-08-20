@@ -4,7 +4,6 @@ public class SavingsAccount {
     int balance;
 
     public SavingsAccount(int initialBalance){
-
         balance = initialBalance;
     }
 
@@ -15,6 +14,7 @@ public class SavingsAccount {
     System.out.println("Hello!");
     System.out.println("Your balance is " + savings.balance);
 
+  // Withdrawing:
   int afterWithdraw = savings.balance - 300;
     savings.balance = afterWithdraw;
     System.out.println("You just withdrew " + 300);
@@ -32,7 +32,9 @@ public class SavingsAccount {
     System.out.println("Hello");
     System.out.println("Your balance is " + savings.balance);
 
-    
+   // Deposit:
+   int afterDeposit2 = savings.balance + 600;
+   savings.balance = afterDeposit2;
     
     }
 
