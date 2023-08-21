@@ -39,7 +39,9 @@ public class SavingsAccount {
 
    // Check balance
    System.out.println("Hello!");
-   System.out.println("Your balance is " + balance);
+   System.out.println("Your balance is " + savings.balance);
+
+   
     
     }
 
@@ -53,8 +55,10 @@ public class SavingsAccount {
         System.out.println("You just deposited " + amountToDeposit);
         
     }
-    public void withdraw(int amountToWithdraw) {
+    public int withdraw(int amountToWithdraw) {
         balance = balance - amountToWithdraw;
+        System.out.println("You just withdrew " + amountToWithdraw);
+        return amountToWithdraw;
     }
 
 }
