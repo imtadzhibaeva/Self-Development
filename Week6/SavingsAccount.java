@@ -11,6 +11,7 @@ public class SavingsAccount {
         SavingsAccount savings = new SavingsAccount(2000);
     
 savings.withdraw(300);
+savings.deposit(300);
 
     // check balance:
     System.out.println("Hello!");
