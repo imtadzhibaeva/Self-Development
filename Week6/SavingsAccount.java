@@ -10,6 +10,8 @@ public class SavingsAccount {
     public static void main(String[] args) {
         SavingsAccount savings = new SavingsAccount(2000);
     
+savings.withdraw(300);
+
     // check balance:
     System.out.println("Hello!");
     System.out.println("Your balance is " + savings.balance);
