@@ -12,6 +12,7 @@ public class SavingsAccount {
     
 savings.withdraw(300);
 savings.deposit(300);
+savings.checkBalance(300);
 
     // check balance:
     System.out.println("Hello!");
