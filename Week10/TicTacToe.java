@@ -126,6 +126,7 @@ winning.add(cross1);
 winning.add(cross2);
 
 for(List l : winning) {
+    
     if(playerPositions.containsAll(l)); {
         return "Congratulations you won!";
     } else if (cpuPositions.contains(l)) {
@@ -135,6 +136,7 @@ for(List l : winning) {
     }
 }
     return "";
-    
+
 }
+
 }
