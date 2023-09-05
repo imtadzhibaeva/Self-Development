@@ -14,5 +14,9 @@ public class  Sudoku {
         public GameState getgameState() {
             return gameState;
         }
+
+        public int[][] getGridState() {
+            return gridState;
+        }
     }
 }
