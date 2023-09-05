@@ -11,5 +11,8 @@ public class  Sudoku {
         this.gameState = gameState;
         this gridState = gridState;
 
+        public GameState getgameState() {
+            return gameState;
+        }
     }
 }
