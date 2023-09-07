@@ -5,7 +5,7 @@ public class Order2 {
     double billAmount;
     String shipping;
 
-    public Order(boolean filled, double cost, String shippingMethod) {
+    public Order2 (boolean filled, double cost, String shippingMethod) {
         if (cost> 24.00) {
             System.out.println("High value item!");
         } 
@@ -15,7 +15,7 @@ public class Order2 {
     }
 
     public void ship(){
-        if(filled) {
+        if(isFilled) {
             System.out.println("Shipping");
             System.out.println("Shipping cost " + calculateShipping());
         } else {
@@ -37,8 +37,8 @@ public class Order2 {
 
     public static void main(String[] args){
         // do not alter the main method!
-        Order book = new Order(true, 9.99, "Express");
-        Order chemistrySet = new Order(false, 72.50, "Regular");
+        Order2 book = new Order2(true, 9.99, "Express");
+        Order2 chemistrySet = new Order2(false, 72.50, "Regular");
 
         book.ship();
         chemistrySet.ship();
