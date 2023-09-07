@@ -25,10 +25,17 @@ public class Order2 {
 
     public double calculateShipping() {
         // declare a conditional statement here
+        if (shipping.equals("Regular")) {
+            return 0;
+        } else if (shipping.equals("Express")) {
+            return 1.75;
+        } else {
+            return .50;
+        }
 
     }
 
-    public ststaic void main(String[] args){
+    public static void main(String[] args){
         // do not alter the main method!
         Order book = new Order(true, 9.99, "Express");
         Order chemistrySet = new Order(false, 72.50, "Regular");
