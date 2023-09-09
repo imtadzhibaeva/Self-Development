@@ -18,7 +18,19 @@ public class NeastedCondStat {
      public void ship() {
         if (isFilled) {
             System.out.println("Shipping");
-           //  System.out.println("Shipping cost " +);
+            System.out.println("Shipping cost " + calculateShipping());
+        } else {
+            System.out.println("Order not ready");
+        }
+     }
+
+     public double calculateShipping() {
+        if (shipping.equals("Regular")) {
+            return 0;
+        } else if (shipping.equals("Express")) {
+
+        } else {
+            return .50;
         }
      }
 }
