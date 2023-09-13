@@ -26,25 +26,13 @@ public class SwitchStatement {
      }
 
      public double calculateShipping() {
-        if (shipping.equals("Regular")) {
-            return 0;
-        } else if (shipping.equals("Express")) {
-// add your code here
-if (couponCode.equals("ship50")) {
-    return .85;
-} else {
-    return 1.75;
-}
-        } else {
-            return .50;
-        }
+        double shippingCost;
+        // declare switch statement here
+
+        return shippingCost;
      }
      public static void main(String[] args) {
         // do not alter the main method!
-        NestedCondStat book = new NestedCondStat(true, 9.99, "Express", "ship50");
-        NestedCondStat chemistrySet = new NestedCondStat(false, 72.50, "Regular", "freeShipping");
-
-        book.ship();
-        chemistrySet.ship();
-     }
+       
+}
 }
