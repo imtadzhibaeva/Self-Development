@@ -1,7 +1,6 @@
 package Week16;
 
 public class SwitchStatement {
-
     boolean isFilled;
     double billAmount;
     String shipping;
@@ -33,6 +32,11 @@ public class SwitchStatement {
      }
      public static void main(String[] args) {
         // do not alter the main method!
+        SwitchStatement book = new SwitchStatement((true, 9.99, "Express");
+        SwitchStatement chemistrySet = new SwitchStatement(false, 72.50, "Regular");
+
+        book.ship();
+        chemistrySet.ship();
        
 }
 }
