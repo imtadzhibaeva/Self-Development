@@ -27,12 +27,19 @@ public class SwitchStatement {
      public double calculateShipping() {
         double shippingCost;
         // declare switch statement here
-
-        return shippingCost;
+    switch (shipping){
+        case "Regular":
+        return 0;
+        case "Express":
+        return 1.75;
+        default:
+        return .50;
+    }
+        // return shippingCost;
      }
      public static void main(String[] args) {
         // do not alter the main method!
-        SwitchStatement book = new SwitchStatement((true, 9.99, "Express");
+        SwitchStatement book = new SwitchStatement(true, 9.99, "Express");
         SwitchStatement chemistrySet = new SwitchStatement(false, 72.50, "Regular");
 
         book.ship();
