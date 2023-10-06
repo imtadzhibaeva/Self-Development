@@ -10,8 +10,8 @@ public class learnJava {
         // String name = "Susan";
         // System.out.println(name.toLowerCase());
 
-        String exclaim = addExplanationPoints("hot dogs");
-        System.out.println(exclaim);
+        //String exclaim = addExplanationPoints("hot dogs");
+       //System.out.println(exclaim);
     }
 
     public static void addExplanationPoints(String s){
