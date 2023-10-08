@@ -34,9 +34,12 @@ public class SwitchStatement {
         return 1.75;
         default:
         return .50;
+         
+        
     }
-        // return shippingCost;
+      
      }
+     // System.out.println(shippingCost);
      public static void main(String[] args) {
         // do not alter the main method!
         SwitchStatement book = new SwitchStatement(true, 9.99, "Express");
