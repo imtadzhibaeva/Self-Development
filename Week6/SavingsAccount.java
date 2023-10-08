@@ -1,66 +1,66 @@
-package Week6;
+// package Week6;
 
-public class SavingsAccount {
-    int balance;
+// public class SavingsAccount {
+//     int balance;
 
-    public SavingsAccount(int initialBalance){
-        balance = initialBalance;
-    }
-    public static void main(String[] args) {
-        SavingsAccount savings = new SavingsAccount(2000);
+//     public SavingsAccount(int initialBalance){
+//         balance = initialBalance;
+//     }
+//     public static void main(String[] args) {
+//         SavingsAccount savings = new SavingsAccount(2000);
     
-savings.withdraw(300);
-savings.deposit(300);
-savings.checkBalance(300);
-    // check balance:
-    System.out.println("Hello!");
-    System.out.println("Your balance is " + savings.balance);
+// savings.withdraw(300);
+// savings.deposit(300);
+// savings.checkBalance(300);
+//     // check balance:
+//     System.out.println("Hello!");
+//     System.out.println("Your balance is " + savings.balance);
 
-  // Withdrawing:
-  int afterWithdraw = savings.balance - 300;
-    savings.balance = afterWithdraw;
-    System.out.println("You just withdrew " + 300);
+//   // Withdrawing:
+//   int afterWithdraw = savings.balance - 300;
+//     savings.balance = afterWithdraw;
+//     System.out.println("You just withdrew " + 300);
 
-    // check balance
-    System.out.println("Hello");
-    System.out.println("Your balance is " + savings.balance);
+//     // check balance
+//     System.out.println("Hello");
+//     System.out.println("Your balance is " + savings.balance);
 
-    // Deposit
-    int afterDeposit = savings.balance + 600;
-    savings.balance = afterDeposit;
-    System.out.println("You just deposited " + 600);
+//     // Deposit
+//     int afterDeposit = savings.balance + 600;
+//     savings.balance = afterDeposit;
+//     System.out.println("You just deposited " + 600);
 
-    // Check balance
-    System.out.println("Hello");
-    System.out.println("Your balance is " + savings.balance);
+//     // Check balance
+//     System.out.println("Hello");
+//     System.out.println("Your balance is " + savings.balance);
 
-   // Deposit:
-   int afterDeposit2 = savings.balance + 600;
-   savings.balance = afterDeposit2;
-   System.out.println("You just deposited " + 600);
+//    // Deposit:
+//    int afterDeposit2 = savings.balance + 600;
+//    savings.balance = afterDeposit2;
+//    System.out.println("You just deposited " + 600);
 
-   // Check balance
-   System.out.println("Hello!");
-   System.out.println("Your balance is " + savings.balance);
+//    // Check balance
+//    System.out.println("Hello!");
+//    System.out.println("Your balance is " + savings.balance);
 
    
     
-    }
+//     }
 
-    public void checkBalance() {
-        System.out.println("Hello");
-        System.out.println("Your balance is " + balance);
-    }
+//     public void checkBalance() {
+//         System.out.println("Hello");
+//         System.out.println("Your balance is " + balance);
+//     }
 
-    public void deposit(int amountToDeposit) {
-        balance = amountToDeposit + balance;
-        System.out.println("You just deposited " + amountToDeposit);
+//     public void deposit(int amountToDeposit) {
+//         balance = amountToDeposit + balance;
+//         System.out.println("You just deposited " + amountToDeposit);
         
-    }
-    public int withdraw(int amountToWithdraw) {
-        balance = balance - amountToWithdraw;
-        System.out.println("You just withdrew " + amountToWithdraw);
-        return amountToWithdraw;
-    }
+//     }
+//     public int withdraw(int amountToWithdraw) {
+//         balance = balance - amountToWithdraw;
+//         System.out.println("You just withdrew " + amountToWithdraw);
+//         return amountToWithdraw;
+//     }
 
-}
+// }
