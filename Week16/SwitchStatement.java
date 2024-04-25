@@ -28,6 +28,7 @@ public class SwitchStatement {
         double shippingCost;
         // declare switch statement here
     switch (shipping){
+        
         case "Regular":
         return 0;
         case "Express":
