@@ -8,7 +8,7 @@ public class BadNames {
         // int salaryExpectation = 100000;
         int yearOfBirth = 1995; 
 
-        
+   
         System.out.println(yearOfBirth); 
     }
 }
