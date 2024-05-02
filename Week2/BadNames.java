@@ -7,7 +7,6 @@ public class BadNames {
         // String com = "samira@google.com";
         // int salaryExpectation = 100000;
         int yearOfBirth = 1995; 
-
         System.out.println(yearOfBirth); 
     }
 }
