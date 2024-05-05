@@ -1,5 +1,4 @@
 // package Week6.Week10;
-
 // import java.util.ArrayList;
 // import java.util.Arrays;
 // import java.util.List;
@@ -9,7 +8,7 @@
 //    static ArrayList<Integer> playerPositions = new ArrayList<Integer>();
 //    static ArrayList<Integer> cpuPositions = new ArrayList<Integer>();
 //     public static void main(String[] args) {
-  
+
 //     char [][] gameBoard = {{' ', '|', ' ', '|', ' '},
 //                             {'-', '+', '-', '+', '-'},
 //                             {' ', '|', ' ', '|', ' '},
@@ -24,7 +23,6 @@
 // System.out.println("position taken! Enter a correct Position");
 // playerPos = scan.nextInt();
 // }
-
 //         placePiece(gameBoard, playerPos, "player");
 //  String result = checkWinner();
 //         if(result.length() > 0);
