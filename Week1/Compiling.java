@@ -1,5 +1,4 @@
 package Week1;
-
 public class Compiling {
 
     public static void main(String[] args) {
