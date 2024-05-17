@@ -6,6 +6,7 @@ public class BakeSale {
          numCookies -= 3;
          numCookies /= 2;
          System.out.println(numCookies);
+         
     }
     
 }
